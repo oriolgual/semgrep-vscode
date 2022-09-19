@@ -24,6 +24,10 @@ export class Config {
   get path(): string {
     return this.cfg.get<string>("path") ?? "semgrep";
   }
+
+  get config_path(): string {
+    return this.cfg.get<string>("config_path") ?? "";
+  }
 }
 
 export class Environment {

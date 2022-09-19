@@ -74,6 +74,10 @@ You can set the following options by going to Preferences > Settings:
   - Type: `string`
   - <i id="/properties/semgrep.path">path: #/properties/semgrep.path</i>
   - Default: _"semgrep"_
+- <b id="#/properties/semgrep.config_path">semgrep.config_path</b>
+  - Type: `string`
+  - <i id="/properties/semgrep.config_path">path: #/properties/semgrep.config_path</i>
+  - Default: _""_
 - <b id="#/properties/semgrep.logging">semgrep.logging</b>
   - _Enable logging for the extension and the LSP server._
   - Type: `boolean`

@@ -76,6 +76,10 @@ function semgrepCmdLineOpts(env: Environment): string[] {
   // Subcommand
   cmdlineOpts.push(...["lsp"]);
 
+  if (env.config.config_path.length > 0) {
+    cmdlineOpts.push(...[env.config.config_path]);
+  }
+
   // Logging
   if (env.config.logging) {
     cmdlineOpts.push(...["--debug"]);
